@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="d1203156-c33d-48e4-8e2e-474fda635929">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="74"/>
+	<parameter name="idpel" class="java.lang.String"/>
+	<queryString>
+		<![CDATA[SELECT
+     struk.`IDPelanggan` AS struk_IDPelanggan,
+     struk.`nama_p` AS struk_nama_p,
+     struk.`coklat_p` AS struk_coklat_p,
+     struk.`strawberry_p` AS struk_strawberry_p,
+     struk.`vanilla_p` AS struk_vanilla_p,
+     struk.`harga_p` AS struk_harga_p,
+     struk.`Totalb` AS struk_Totalb,
+     struk.`BayarB` AS struk_BayarB,
+     struk.`Kembali` AS struk_Kembali,
+     struk.`tgl_bayar` AS struk_tgl_bayar,
+     struk.`waktu_bayar` AS struk_waktu_bayar
+FROM
+     `struk` struk
+WHERE struk.IDPelanggan = $P{idpel}]]>
+	</queryString>
+	<field name="struk_IDPelanggan" class="java.lang.Integer"/>
+	<field name="struk_nama_p" class="java.lang.String"/>
+	<field name="struk_coklat_p" class="java.lang.Integer"/>
+	<field name="struk_strawberry_p" class="java.lang.Integer"/>
+	<field name="struk_vanilla_p" class="java.lang.Integer"/>
+	<field name="struk_harga_p" class="java.lang.String"/>
+	<field name="struk_Totalb" class="java.lang.String"/>
+	<field name="struk_BayarB" class="java.lang.String"/>
+	<field name="struk_Kembali" class="java.lang.String"/>
+	<field name="struk_tgl_bayar" class="java.lang.String"/>
+	<field name="struk_waktu_bayar" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="159" y="0" width="226" height="44" uuid="925323f5-920f-400f-8044-b82881dddd71"/>
+				<textElement textAlignment="Center">
+					<font fontName="Baby Blocks" size="36"/>
+				</textElement>
+				<text><![CDATA[dOuNg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="123" y="44" width="297" height="24" uuid="079d33b7-019a-4d27-985b-f4cb64ce5273"/>
+				<textElement textAlignment="Center">
+					<font fontName="Adobe Garamond Pro" size="24"/>
+				</textElement>
+				<text><![CDATA[Jln. Nurkim Rt 3 / Rw 13]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="100" height="15" uuid="3aefac3c-93aa-43bd-8111-03918a875b0b"/>
+				<textFieldExpression><![CDATA[$F{struk_tgl_bayar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="15" width="123" height="20" uuid="a342adce-bb8b-4ccf-b6b3-95a74ed3c43e"/>
+				<textFieldExpression><![CDATA[$F{struk_waktu_bayar}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="ee803533-f9ac-41de-9639-13457e59b40b"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="9" width="100" height="20" uuid="03a434a4-0c99-46a5-90d5-cb82907d1021"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[ID Pelanggan          :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="111" y="8" width="133" height="20" uuid="22773085-24f5-4aa9-a0a3-317f86b675d9"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{struk_IDPelanggan}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="29" width="100" height="20" uuid="99922b2a-877b-4c77-bc25-9f3f0a0281b3"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Nama Pelanggan     :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="111" y="29" width="133" height="20" uuid="eab1aca0-a2e7-48cd-9998-7a9777f9aa0c"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{struk_nama_p}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="98" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="0" width="555" height="1" uuid="26b28c89-dbd4-4d6c-b6e2-f514db5c7b9b"/>
+			</line>
+			<staticText>
+				<reportElement x="0" y="11" width="67" height="20" uuid="6244f96b-e1e0-4cce-afb9-e96c19ab1ce2"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Coklat        :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="42" width="67" height="20" uuid="20e6da0b-a0df-498b-970a-1a2061c9365a"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Strawberry :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="72" width="67" height="20" uuid="f3526828-eab8-402e-bd1d-3822bdd4044f"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Vanilla       :]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="67" y="11" width="100" height="20" uuid="cf79276a-c2b3-40e0-a4a0-f973cd4152a0"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{struk_coklat_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="42" width="134" height="20" uuid="321e04b1-aedf-421c-ac10-590fe25f3f90"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{struk_strawberry_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="67" y="72" width="116" height="20" uuid="17932294-554e-4e86-b492-ec013536b60b"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{struk_vanilla_p}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="396" y="11" width="100" height="20" uuid="cb55922e-b129-4bc0-a074-022311f16429"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Total     :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="42" width="100" height="20" uuid="a89fcd17-11c1-4016-8864-6df600cfd336"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Bayar    :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="396" y="72" width="100" height="20" uuid="aa2ee9e8-36f1-4699-bd21-6bdfe391f904"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<text><![CDATA[Kembali :]]></text>
+			</staticText>
+			<line>
+				<reportElement x="444" y="62" width="100" height="1" uuid="10fe2021-4e36-4ac9-92f5-54cce8e79af2"/>
+			</line>
+			<textField>
+				<reportElement x="444" y="11" width="100" height="20" uuid="2b979647-cdd1-4101-80fd-84ac467fe4bb"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{struk_Totalb}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="42" width="100" height="20" uuid="fa91997e-1583-4a1e-8e76-7d079b59d901"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{struk_BayarB}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="444" y="72" width="111" height="20" uuid="f4b52186-c34b-4c26-9c09-21c60c9504d5"/>
+				<textElement>
+					<font fontName="Serif" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{struk_Kembali}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="58" splitType="Stretch">
+			<staticText>
+				<reportElement x="216" y="31" width="126" height="20" uuid="77f6c1bf-c54b-4493-848a-8f7602dc3448"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="14"/>
+				</textElement>
+				<text><![CDATA[Telah Berbelanja]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="216" y="0" width="126" height="31" uuid="3e667746-44d0-4150-801e-922ea6d9b89a"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="24"/>
+				</textElement>
+				<text><![CDATA[Terimakasih]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="16" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="12" splitType="Stretch"/>
+	</summary>
+</jasperReport>

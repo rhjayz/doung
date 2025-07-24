@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="185970e1-42c6-42a1-891a-a6d3492e6c1b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="41"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     tb_order.`IDPelanggan` AS tb_order_IDPelanggan,
+     tb_order.`nama_p` AS tb_order_nama_p,
+     tb_order.`alamat_p` AS tb_order_alamat_p,
+     tb_order.`namat_p` AS tb_order_namat_p,
+     tb_order.`notlp_p` AS tb_order_notlp_p,
+     tb_order.`coklat_p` AS tb_order_coklat_p,
+     tb_order.`strawberry_p` AS tb_order_strawberry_p,
+     tb_order.`vanilla_p` AS tb_order_vanilla_p,
+     tb_order.`harga_p` AS tb_order_harga_p
+FROM
+     `tb_order` tb_order]]>
+	</queryString>
+	<field name="tb_order_IDPelanggan" class="java.lang.Integer"/>
+	<field name="tb_order_nama_p" class="java.lang.String"/>
+	<field name="tb_order_alamat_p" class="java.lang.String"/>
+	<field name="tb_order_namat_p" class="java.lang.String"/>
+	<field name="tb_order_notlp_p" class="java.lang.Integer"/>
+	<field name="tb_order_coklat_p" class="java.lang.Integer"/>
+	<field name="tb_order_strawberry_p" class="java.lang.Integer"/>
+	<field name="tb_order_vanilla_p" class="java.lang.Integer"/>
+	<field name="tb_order_harga_p" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="108" y="0" width="354" height="46" uuid="bb2e57ea-fe7f-46b8-8ad8-a48b2b1ef753"/>
+				<textElement>
+					<font fontName="Century Gothic" size="36"/>
+				</textElement>
+				<text><![CDATA[Laporan Pelanggan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="209" y="46" width="145" height="33" uuid="9d80376a-baa9-4cbf-b6ab-b94ee5a62c84"/>
+				<textElement>
+					<font fontName="Baby Blocks" size="24"/>
+				</textElement>
+				<text><![CDATA[DoUnG]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="98" y="0" width="352" height="35" uuid="77416e1e-7835-453f-9b70-18daf1d8c3fb"/>
+				<textElement textAlignment="Center">
+					<font fontName="Serif" size="24"/>
+				</textElement>
+				<text><![CDATA[Jalan Nurkim Rt 3 / Rw 13]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="64" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="41" width="35" height="20" uuid="dce17f8f-3b97-4c9c-908e-7ff1ad5a0d47"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[ID Pelanggan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="45" y="41" width="42" height="20" uuid="aba896fd-5ffd-4697-95b0-864892f4d3ef"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="98" y="41" width="39" height="20" uuid="4c7e8066-3e18-4c9f-9145-3d3cf253d359"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="146" y="41" width="63" height="20" uuid="19960b18-cd99-41bc-ad6c-49d07ce5cb77"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Nama Toko]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="41" width="66" height="20" uuid="9d72973d-24fb-47a0-bacc-70f5c215d16e"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="298" y="41" width="56" height="20" uuid="c3984bab-236e-48b2-a1bb-664ba4f93f62"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Coklat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="366" y="41" width="49" height="20" uuid="2de01196-0c8a-4b3b-acb3-407efe707dda"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Strawberry]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="426" y="41" width="36" height="20" uuid="f866ee50-e64a-4a1a-81de-b9412d29c451"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Vanilla]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="473" y="41" width="82" height="20" uuid="cd2dfff8-875d-499d-a334-bae330a864de"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Harga]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="41" width="1" height="23" uuid="9907428e-8a28-4cc6-b4e0-a03f3319b7c2"/>
+			</line>
+			<line>
+				<reportElement x="40" y="41" width="1" height="23" uuid="8b750aed-b35f-48c0-a6eb-732d8b9d7c55"/>
+			</line>
+			<line>
+				<reportElement x="92" y="41" width="1" height="23" uuid="94e6c87c-083d-40ef-91fc-2c2b687dd832"/>
+			</line>
+			<line>
+				<reportElement x="141" y="41" width="1" height="23" uuid="3cb3cfdd-e18e-4747-9e36-befe92b4da9c"/>
+			</line>
+			<line>
+				<reportElement x="213" y="41" width="1" height="23" uuid="992e01ff-9f9b-46bb-ae50-00c9ad5a760d"/>
+			</line>
+			<line>
+				<reportElement x="290" y="41" width="1" height="23" uuid="1aa62331-1675-4e54-ab4e-4ab054e429b5"/>
+			</line>
+			<line>
+				<reportElement x="360" y="41" width="1" height="23" uuid="6136002d-d24c-4463-9343-24b7f2423db9"/>
+			</line>
+			<line>
+				<reportElement x="421" y="41" width="1" height="23" uuid="f4b1a6fb-5b3a-4514-8e10-5b99d29524dd"/>
+			</line>
+			<line>
+				<reportElement x="466" y="40" width="1" height="23" uuid="a1495112-8da5-4a2d-b2ff-b6afe171f500"/>
+			</line>
+			<line>
+				<reportElement x="555" y="41" width="1" height="23" uuid="e7837596-091e-4958-bf3a-cdc3a65fe356"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="22" splitType="Stretch">
+			<textField>
+				<reportElement x="1" y="0" width="34" height="20" uuid="eea2128e-e8d5-43f5-9495-48cf57ac7aec"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tb_order_IDPelanggan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="45" y="0" width="42" height="20" uuid="be1490f8-81e2-4416-9e76-7f60ebd59604"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tb_order_nama_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="146" y="0" width="63" height="20" uuid="7701747a-7ca2-46de-8069-4ed36f041153"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tb_order_namat_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="231" y="0" width="34" height="20" uuid="8aabe76d-3be7-41d8-bcd7-f213ecac6487"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tb_order_notlp_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="312" y="0" width="30" height="20" uuid="5be65288-6285-498d-91e6-62cb5ee30bf3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tb_order_coklat_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="377" y="0" width="23" height="20" uuid="0b23755d-06b4-4d0c-8315-e5721aa902b2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tb_order_strawberry_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="436" y="0" width="20" height="20" uuid="a34879ca-7797-4439-93bc-9eba20d594e3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tb_order_vanilla_p}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="473" y="0" width="82" height="20" uuid="d4eb440b-bdab-4a42-aadb-37a728136ff3"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tb_order_harga_p}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="21" width="555" height="1" uuid="35b7a284-ee02-49aa-bd4c-92667cd97464"/>
+			</line>
+			<line>
+				<reportElement x="466" y="0" width="1" height="20" uuid="96672d85-4d86-42f7-8657-7c12328a2028"/>
+			</line>
+			<line>
+				<reportElement x="555" y="2" width="1" height="20" uuid="59a6e64f-f43c-44e4-aaf4-3b8ba9c18d7a"/>
+			</line>
+			<line>
+				<reportElement x="360" y="0" width="1" height="20" uuid="b90a1dd0-8ed9-485a-8e93-0dce70079f8f"/>
+			</line>
+			<line>
+				<reportElement x="421" y="1" width="1" height="20" uuid="8e3b29af-175e-4035-bbc9-5e18b829f92e"/>
+			</line>
+			<line>
+				<reportElement x="290" y="0" width="1" height="22" uuid="98ab45b2-c5b7-479b-9208-a36cfcdca875"/>
+			</line>
+			<line>
+				<reportElement x="213" y="1" width="1" height="20" uuid="2f467dc3-8385-4df6-819b-0501fcfc87e5"/>
+			</line>
+			<textField>
+				<reportElement x="98" y="2" width="39" height="18" uuid="a046667d-0eeb-45b7-a8e2-8b4116c9fc6b"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{tb_order_alamat_p}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="141" y="1" width="1" height="20" uuid="5ba5939d-7b41-4939-b0d6-b346904309dc"/>
+			</line>
+			<line>
+				<reportElement x="92" y="1" width="1" height="20" uuid="58e92248-d5fd-4584-937d-f0b087da3407"/>
+			</line>
+			<line>
+				<reportElement x="40" y="0" width="1" height="22" uuid="df0e4a1e-22c8-46af-bbc3-2190c742faa7"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="1" height="22" uuid="383e7b6d-f546-4ca3-ba12-700009cb91a3"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-24" width="555" height="1" uuid="1cfd0ca7-dedc-4a1e-8a61-ca9859deb9ad"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
